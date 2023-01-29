@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Resina</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+<!--             <img src="#" alt="Logo Feito a mao.">-->
+            <h1>Calculo de Resina - Feito a Mão</h1>
+        </header>
+        <main>
+            <form action="#" method="">
+                <ul>
+                    <li>
+                        <label>Tipo da Resina:</label>
+                        <select name="type_resina" id="type_resina">
+                            <option value="1.45">100/45</option>
+                            <option value="1.5">100/50</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="weight-piece">Peso peça (g):</label>
+                        <input type="text" id="weight-piece" name="weight-piece"/>
+                    </li>
+                    <li class="button">
+                        <button type="button" onclick="calculateResina()">Calcular</button>
+                        <button type="reset">Limpar</button>
+                    </li>
+                    <hr>
+                    <h2>Resultado</h2>
+                    <li>
+                        <label for="weight-piece">Quantidade de Resina:</label>
+                        <input type="text" id="amount-resina-piece" name="amount-resina-piece" readonly="readonly"/>
+                    </li>
+                    <li>
+                        <label for="weight-piece">Quantidade de Endurecedor:</label>
+                        <input type="text" id="amount-endurecedor-piece" name="amount-resina-piece" readonly="readonly"/>
+                    </li>
+                
+                </ul>
+            </form>
+        </main>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

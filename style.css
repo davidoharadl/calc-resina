@@ -1,0 +1,44 @@
+:root {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body {
+    width: 130vh;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+form li {
+    margin-bottom: .5rem;
+}
+
+option, input, select {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: #aaa;
+    color: #000;
+    padding: 0.3rem;
+    font-weight: bold;
+}
