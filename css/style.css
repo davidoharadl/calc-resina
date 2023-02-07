@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Intro Script';
-    src: url('./fonts/IntroScriptDemo-Medium.otf') format('truetype');
+    src: url('./IntroScriptDemo-Medium.otf') format('truetype');
   }
 
 :root {
