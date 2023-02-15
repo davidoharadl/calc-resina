@@ -5,9 +5,6 @@ btCalc.addEventListener('click', calculateResina);
 function calculateResina() {
     let typeResina = parseFloat(document.querySelector('#type_resina').value);
     let weightPiece = parseInt(document.querySelector('#weight-piece').value);
-    // weightPiece = parseInt(weightPiece, 10);
-    console.log(typeof weightPiece);
-    console.log(typeof typeResina);
     
     const fieldResina = document.querySelector('#amount-resina-piece');
     const fieldEndurecedor = document.querySelector('#amount-endurecedor-piece');
