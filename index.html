@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de Resina</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
         <header class="header">
@@ -19,35 +19,37 @@
 
             <form action="#" method="">
                 <ul>
-                    <li>
-                        <label>Tipo da Resina:</label>
-                        <select name="type_resina" id="type_resina">
-                            <option value="1.45">100/45</option>
-                            <option value="1.5">100/50</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="weight-piece">Peso peça (g):</label>
-                        <input type="text" id="weight-piece" name="weight-piece"/>
-                    </li>
-                    <li class="button">
-                        <button type="button" onclick="calculateResina()">Calcular</button>
-                        <button type="reset">Limpar</button>
-                    </li>
-                    <hr>
-                    <h2 class="sub-title">Resultado</h2>
-                    <li>
-                        <label for="weight-piece">Quantidade de Resina:</label>
-                        <input type="text" id="amount-resina-piece" name="amount-resina-piece" readonly="readonly"/>
-                    </li>
-                    <li>
-                        <label for="weight-piece">Quantidade de Endurecedor:</label>
-                        <input type="text" id="amount-endurecedor-piece" name="amount-resina-piece" readonly="readonly"/>
-                    </li>
-                
+                    <div class="form-infos">
+                        <li>
+                            <label class="bt-main-large">Tipo de resina:</label>
+                            <select class="field-main-large" name="type_resina" id="type_resina">
+                                <option value="1.45">100/45</option>
+                                <option value="1.5">100/50</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="bt-main-large" for="weight-piece">Peso da peça (g):</label>
+                            <input class="field-main-large" type="number" id="weight-piece" name="weight-piece"/>
+                        </li>
+                        <li class="buttons">
+                            <button class="bt-clear-medium" type="reset">Limpar</button>
+                            <button id="bt-calc"class="bt-main-medium" type="button">Calcular</button>
+                        </li>
+                    </div>
+                    <div class="form-result">
+                        <h2 class="sub-title">Resultado:</h2>
+                        <li>
+                            <input class="field-main-small" type="text" id="amount-resina-piece" name="amount-resina-piece" readonly="readonly"/>
+                            <label class="bt-main-small" for="weight-piece">de resina</label>
+                        </li>
+                        <li>
+                            <input class="field-main-small" type="text" id="amount-endurecedor-piece" name="amount-resina-piece" readonly="readonly"/>
+                            <label class="bt-main-small" for="weight-piece">de endurecedor</label>
+                        </li>    
+                    </div>
                 </ul>
             </form>
         </main>
-    <script type="text/javascript" src="calc.js"></script>
+    <script type="text/javascript" src="js/calc.js"></script>
 </body>
 </html>
