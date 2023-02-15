@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    --main-color: #6B256F;
+    --second-color: #EBD1ED;
+    --feature-color: #b935c0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --main-font: 'League Spartan', sans-serif;
+    --second-font:  'Pacifico', cursive;
+}
+
+body {
+    font-family: var(--main-font);
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/fundo.png");
+}
+
+.title, .sub-title {
+    font-family: var(--second-font);
+}
+
+.header {
+    /* altura = 230; w1366 */
+    width: 100%; 
+    height: 25%;
+    background: var(--main-color);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    height: 100%;
+    transform: scale(2.3);
+}
+
+main {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+
+.main-title {
+    margin-bottom: 5rem;
+}
+
+.title {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.sub-title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+.form-infos {
+    width: 50%;
+}
+
+.form-result {
+    width: 50%;
+}
+
+.form-result h2 {
+    font-family: var(--second-font);
+    /* text-transform: nor; */
+    color: var(--main-color);
+}
+
+ul {
+    display: flex;
+}
+
+.bt-main-large {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: .75rem 1rem;
+    font-family: var(--main-font);
+    font-weight: 800;
+    width: 8rem;
+    text-align: center;
+}
+
+.field-main-large {
+    height: 2rem;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border: 3px solid var(--second-color);
+    border-radius: 15%;
+    padding: .2rem;
+    font-family: var(--main-font);
+    width: 5.5rem;
+    transition: 1000ms;
+}
+
+.field-main-large:hover {
+    border-color: var(--main-color);
+}
+
+.bt-main-medium {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    font-family: var(--main-font);
+    font-weight: 800;
+    width: 8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 1000ms;
+    border: 1px solid var(--main-color);
+    text-transform: uppercase;
+    border-radius: 15%;
+}
+
+.bt-main-medium:hover {
+    background-color: var(--feature-color);
+}
+
+
+.bt-clear-medium {
+    display: inline-block;
+    background-color: var(--second-color);
+    color: var(--dark-color);
+    padding: .5rem 1rem;
+    font-family: var(--main-font);
+    font-weight: 800;
+    width: 8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 1000ms;
+    border: 1px solid var(--second-color);
+    text-transform: uppercase;
+    border-radius: 15%;
+}
+
+.bt-clear-medium:hover {
+    background-color: var(--feature-color);
+}
+
+.bt-main-small {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    font-family: var(--main-font);
+    font-weight: 800;
+    width: 6.4rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 1000ms;
+    border: 1px solid var(--main-color);
+    text-transform: lowercase;
+    border-radius: 15%;
+}
+
+.field-main-small {
+    height: 1.5rem;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border: 3px solid var(--second-color);
+    border-radius: 15%;
+    padding: .2rem;
+    font-family: var(--main-font);
+    width: 5.5rem;
+    transition: 1000ms;
+    text-align: right;
+}
+
+
+#type_resina {
+    height: 2.4rem;
+    width: 6rem;
+}
+
+option, input, select {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: #aaa;
+    color: #000;
+    padding: 0.3rem;
+    font-weight: bold;
+}
