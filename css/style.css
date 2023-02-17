@@ -79,7 +79,6 @@ li {
 
 .form-result h2 {
     font-family: var(--second-font);
-    /* text-transform: nor; */
     color: var(--main-color);
 }
 
@@ -94,8 +93,10 @@ ul {
     padding: .75rem 1rem;
     font-family: var(--main-font);
     font-weight: 800;
-    width: 8rem;
+    width: 10rem;
     text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .field-main-large {
@@ -103,11 +104,12 @@ ul {
     background-color: var(--second-color);
     color: var(--main-color);
     border: 3px solid var(--second-color);
-    border-radius: 15%;
-    padding: .2rem;
+    border-radius: 20px;
+    padding-left: .8rem;
     font-family: var(--main-font);
-    width: 5.5rem;
+    max-width: 5.5rem;
     transition: 1000ms;
+    box-sizing: border-box;
 }
 
 .field-main-large:hover {
@@ -127,7 +129,9 @@ ul {
     transition: 1000ms;
     border: 1px solid var(--main-color);
     text-transform: uppercase;
-    border-radius: 15%;
+    border-radius: 20px;
+    box-sizing: border-box;
+
 }
 
 .bt-main-medium:hover {
@@ -148,11 +152,13 @@ ul {
     transition: 1000ms;
     border: 1px solid var(--second-color);
     text-transform: uppercase;
-    border-radius: 15%;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .bt-clear-medium:hover {
     background-color: var(--feature-color);
+    border-radius: 20px;
 }
 
 .bt-main-small {
@@ -162,26 +168,28 @@ ul {
     padding: .5rem 1rem;
     font-family: var(--main-font);
     font-weight: 800;
-    width: 6.4rem;
+    width: 9rem;
     text-align: left;
-    cursor: pointer;
     transition: 1000ms;
     border: 1px solid var(--main-color);
     text-transform: lowercase;
-    border-radius: 15%;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .field-main-small {
-    height: 1.5rem;
+    display: inline-block;
+    height: 2rem;
     background-color: var(--second-color);
     color: var(--main-color);
     border: 3px solid var(--second-color);
-    border-radius: 15%;
-    padding: .2rem;
+    padding-left: .8rem;
     font-family: var(--main-font);
     width: 5.5rem;
     transition: 1000ms;
     text-align: right;
+    border-radius: 20px;
+    box-sizing: border-box;          
 }
 
 
