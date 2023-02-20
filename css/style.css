@@ -17,7 +17,6 @@
 body {
     font-family: var(--main-font);
     width: 100vw;
-    height: 100vh;
     background-image: url("../img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,8 +28,8 @@ body {
 
 .header {
     width: 100%; 
-    height: 25%;
-    background: var(--main-color);
+    height: 10rem;
+    background-color: var(--main-color);
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
@@ -52,7 +51,7 @@ main {
     margin-bottom: 5rem;
 }
 
-.main-title .title {
+.title {
     text-align: center;
     color: var(--main-color);
     font-size: 5rem;
@@ -201,6 +200,7 @@ main {
     border: 3px solid var(--second-color);
     padding-left: .8rem;
     font-family: var(--main-font);
+    font-weight: 800;
     font-size: 1.5rem;
     width: 5.5rem;
     height: 2.4rem;
@@ -211,21 +211,104 @@ main {
 }
 
 
-@media (max-width: 1200px)
-{
-    ul {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
+@media (max-width: 1624px) { 
+    .title {
+        font-size: 4.5rem;
+    }
+    .infos {
+        text-align: initial;
+    }
+    .infos-dados, .infos-result {
+        width: 100%;
+        
+    }
+    .infos-result {
+        text-align: center;
+        margin-top: 3rem;
     }
 
-    .form-infos {
-        width: 54%;
-        margin: 0 auto;
+    .sub-title {
+        text-align: center;
     }
-    
-    .form-result {
-        width: 54%;
-        margin: 0 auto;
+
+    .infos-dados-fields, .infos-dados-buttons {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1298px) { 
+
+    .infos-dados-fields, .infos-dados-buttons {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) { 
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+    }
+
+    .infos-dados-fields, .infos-dados-buttons {
+        display: inline-block;
+        width: 100%;
+    }
+    .field-main-large{
+        right: 0;
+        margin-top: .5rem;
+    }
+    .bt-clear-large {
+        margin: .75rem 0;
+    }
+
+    .field-main-small {
+        font-size: 1rem;
+        width: 4rem;
+    }
+
+    .label-main-small {
+        font-size: 1rem;
+        width: 8.5rem;
+        right: 1rem;
+        top: -3px;
+    }
+}
+
+@media (max-width: 375px) { 
+    .logo {
+        transform: scale(2);
+    }
+
+    .main-title {
+        margin-bottom: 3rem
+    }
+
+    .label-main-large {
+        width: auto;
+        
+    }
+
+    .label-main-small {
+        right: .7rem;
+    }
+
+    .infos-result-fields {
+        padding-left: 0;
+    }
+
+    .field-main-large {
+        text-align: center;
+    }
+
+    .field-main-small {
+        font-size: 1rem;
+        width: 3rem;
+        
     }
 }
