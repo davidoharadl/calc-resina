@@ -2,6 +2,15 @@ const btCalc = document.querySelector("#bt-calc");
 
 btCalc.addEventListener('click', calculateResina);
 
+const btClear = document.querySelector("#bt-clear");
+btClear.addEventListener("click", () => {
+    document.querySelector('#type_resina').selectedIndex = 0
+    document.querySelector('#weight-piece').value = "";
+    document.querySelector('#amount-resina-piece').value = "";
+    document.querySelector('#amount-endurecedor-piece').value = "";
+
+});
+
 function calculateResina() {
     let typeResina = parseFloat(document.querySelector('#type_resina').value);
     let weightPiece = parseInt(document.querySelector('#weight-piece').value);
