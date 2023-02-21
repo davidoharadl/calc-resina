@@ -245,7 +245,36 @@ main {
     }
 }
 
-@media (max-width: 425px) { 
+@media (max-width: 648px) {
+    .field-main-large {
+        margin-top: .25rem;
+        right: 0;
+    }
+    .bt-clear-large {
+        margin-top: 1rem;
+        margin-bottom: .25rem;
+    }
+
+}
+
+@media (max-width: 532px) {
+    .label-main-small {
+        font-size: 1.25rem;
+        width: 11rem;
+    }
+    .field-main-small {
+        font-size: 1rem;
+        width: 5rem;
+    }
+}
+/* 
+@media (max-width: 425px) {
+    
+} */
+
+
+
+@media (max-width: 495px) { 
 
     .title {
         font-size: 3rem;
@@ -280,7 +309,8 @@ main {
     }
 }
 
-@media (max-width: 375px) { 
+
+@media (max-width: 405px) { 
     .logo {
         transform: scale(2);
     }
